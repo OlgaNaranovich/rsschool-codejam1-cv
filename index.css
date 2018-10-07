@@ -20,6 +20,7 @@ section {
 
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 20px 0;
 }
@@ -84,6 +85,7 @@ header {
 }
 
 .about__content {
+  flex-direction: row;
   margin-bottom: 20px;
 }
 
@@ -147,6 +149,7 @@ header {
 }
 
 .summury__content strong {
+  text-transform: uppercase;
   color: #5a8b1c;
 }
 
@@ -156,6 +159,7 @@ header {
 }
 
 .summury__qualities strong {
+  text-transform: uppercase;
   padding-bottom: 10px;
 }
 
@@ -170,8 +174,13 @@ header {
   background: linear-gradient(to top right, #818b28, #ccdd66);
 }
 
+/*EDUCATION*/
 .education {
   background: linear-gradient(to top right, #c29a6f, #efddbf);
+}
+
+.education p{
+  margin: 0 auto 30px auto;
 }
 
 .english {
