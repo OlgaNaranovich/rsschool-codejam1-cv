@@ -8,13 +8,20 @@ body {
   max-width: 1024px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 section {
   min-height: 600px;
   border-bottom: 3px solid white;
-  padding: 50px 0;
+  padding: 50px 0;  /*display: flex;*/
+
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 ul {
@@ -49,10 +56,6 @@ header {
   justify-content: space-around;
 }
 
-.nav ul li {
-  padding: 0 10px;
-}
-
 .nav ul li a::after {
   content: '';
   display: block;
@@ -69,9 +72,14 @@ header {
 
 /*MAIN*/
 .about {
-  background: linear-gradient(to top right, #ffcea4, #fdebd2);
+  background: linear-gradient(to top right, #ffc498, #fdebd2);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.about-content {
+  margin-bottom: 20px;
 }
 
 .about .text-wrapper {
@@ -88,13 +96,21 @@ header {
   padding: 10px;
 }
 
-.about p {
+.about .text-wrapper p {
   font-weight: 700;
   padding: 10px;
+  font-size: 1.2rem;
 }
 
-.about .contacts {
-  display: inline-block;
+
+
+.about .phone, .email {
+  margin: 5px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about i {
+  margin-right: 10px;
 }
 
 
