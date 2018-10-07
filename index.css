@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  color: #ffffff;
+  color: #444444;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 section {
   min-height: 600px;
   border-bottom: 3px solid white;
-  padding: 50px 0;  /*display: flex;*/
+  padding: 50px 0; 
 
 }
 
@@ -30,6 +30,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
 }
 
 :hover, :focus {
@@ -74,16 +79,20 @@ header {
 .about {
   background: linear-gradient(to top right, #ffc498, #fdebd2);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 }
 
-.about-content {
+.about__content {
   margin-bottom: 20px;
 }
 
 .about .text-wrapper {
   margin: auto 10px auto auto ;
+}
+
+.about .text-wrapper .github a{
+  color: #444444;
 }
 
 .about img {
@@ -92,32 +101,71 @@ header {
 }
 
 .about h1 {
+  color: #970b0b;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  border-top: 1px solid #970b0b;
+}
+
+.about h2 {
   font-size: 35px;
   padding: 10px;
+  color: #a20925;
 }
 
-.about .text-wrapper p {
-  font-weight: 700;
-  padding: 10px;
-  font-size: 1.2rem;
+.about p {
+  font-weight: 100;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #818b28;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
-
-
 
 .about .phone, .email {
   margin: 5px 0;
   font-family: 'Roboto', sans-serif;
 }
 
-.about i {
+.about i, .about strong {
   margin-right: 10px;
+  color: rgba(180, 100, 100, 0.5);
 }
 
-
+/*SUMMURY*/
 .summury {
   background: linear-gradient(to top right, #b56366, #ebc7b1);
 }
 
+.summury__content {
+  flex-direction: column;
+}
+
+.summury__content p, .summury__content strong {
+  margin-top: 20px;
+}
+
+.summury__content strong {
+  color: #5a8b1c;
+}
+
+.summury__qualities {
+  display: flex;
+  flex-direction: column;
+}
+
+.summury__qualities strong {
+  padding-bottom: 10px;
+}
+
+.summury__qualities ul {
+  list-style-type: disc;
+  margin: auto;
+  text-align: left;
+}
+
+/*SKILLS*/
 .skills {
   background: linear-gradient(to top right, #818b28, #ccdd66);
 }

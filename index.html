@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>VC by Olga Naranovich</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,200i,400,600" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
@@ -12,32 +12,55 @@
   <header>
     <nav class="nav">
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#summury">Summury</a></li>
-            <li><a href="#skills">Skills & Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#english">English</a></li>
+            <li><a href="#about" class="scrollTo">About Me</a></li>
+            <li><a href="#summury" class="scrollTo">Summury</a></li>
+            <li><a href="#skills" class="scrollTo">Skills & Experience</a></li>
+            <li><a href="#education" class="scrollTo">Education</a></li>
+            <li><a href="#english" class="scrollTo">English</a></li>
           </ul>
       </nav>
   </header>
   <main class="main">
     <section id="about" class="about">
-      <div class="content about-content">
+      <div class="content about__content">
         <div class="text-wrapper">
-          <h1>Hello,<br>I'm Olga Naranovich!</h1>
-          <p>and I know how your site should look like</p>
+          <h2>Hello,<br>I'm Olga Naranovich!</h2>
+          <h1>Desining templetes and pagemaking</h1>
+          
           <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+375 29 660-21-22</div>
           <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i>naranovicholga@gmail.com</div>     
-          <div class="githab"><strong>githab</strong> <a href="https://github.com/OlgaNaranovich" target="_blank">https://github.com/OlgaNaranovich</a></div>
+          <div class="github"><strong>github</strong> <a href="https://github.com/OlgaNaranovich" target="_blank">https://github.com/OlgaNaranovich</a></div>
         </div>
         <img src="img/photo.jpg" alt="Olga Naranovich" width="300" height="245">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis asperiores vero totam tempore non optio eum placeat, minus ut nesciunt, repudiandae officia laborum. Dolores praesentium aperiam eos excepturi quam quod!</p>
+      <p>"I know how your site should look like"</p>
     </section>
     <section id="summury" class="summury">
       <h2>My summury</h2>
-      <div class="content summury-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis dolorem harum omnis dicta, libero officia amet sit reprehenderit est aspernatur repellendus quis, aliquam possimus vitae sunt consequuntur repudiandae ex.</p>
+      <div class="content summury__content">
+        <p><strong>My main goal</strong> - become a high level professional.</p>
+        <p>I love to work, if what I do brings me pleasure such as desining templetes and
+         pagemaking.</p>
+        <div class="summury__qualities">
+          <strong>Personal qualities</strong>
+          <ul>
+            <li>Self-motivated</li>
+            <li>Enthusiastic</li>
+            <li>Hardworking</li>
+            <li>Eager to learn</li>
+            <li>Cheerful</li>
+          </ul>
+        </div>
+        <div class="summury__qualities">
+          <strong>Professional qualities</strong>
+          <ul>
+            <li>HTMN, CSS, SASS/SCSS/LESS</li>
+            <li>Adobe: Photoshop, Illustrator, InDesing</li>
+            <li>CorelDraw</li>
+            <li>basic JS</li>
+            <li>some next skill</li>
+          </ul>
+        </div>
       </div>
 
     </section>
@@ -62,6 +85,15 @@
     </section>
   </main>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  var $page = $('html, body');
+  $('.scrollTo').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+    return false;
+});
+</script>
 </body>
 </html>
